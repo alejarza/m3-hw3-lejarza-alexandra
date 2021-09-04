@@ -1,5 +1,15 @@
 @import "./variables.less";
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 nav {
     background-color: @yellow;
 }
@@ -10,8 +20,13 @@ nav ul li {
     padding: 2%;
 }
 
+ul {
+    margin: 0;
+}
+
 p {
     color: @primary-color;
+    font-size: @font-p;
 }
 
 button {
@@ -20,33 +35,79 @@ button {
     font: @uppercase-links-color;
     border: none;
     border-radius: 10%;
-
+    margin: 2% 0;
 }
 
 .banner {
     opacity: 33%;
     z-index: 2;
+    width: 100%;
 }
 
-.about {
+.overlay {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 48%;
+    left: 47%;
+}
+
+.about,
+.dine-options {
     max-width: 70%;
+    padding: 0 0 4%;
 }
 
-.info {
+.info,
+.dine {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10%;
 }
 
+.dine-options {
+    padding-top: 2%;
+}
+
 .burger-pic {
     padding-bottom: 2%;
+}
+
+.burger-pic img {
+    width: 70%;
+    margin: 10% 30% 0;
+}
+
+.bob-pic img {
+    max-width: 60%;
+    padding: 15%;
 }
 
 .dine {
     background-color: @light-gray;
 }
 
+.yellow-line {
+    padding: 0.5%;
+    background-color: @yellow;
+}
+
 footer {
     background-color: @primary-color;
+    text-align: center;
+    padding: 2% 0;
+}
+
+footer img {
+    width: 25%;
 }
